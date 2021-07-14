@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.container {
+  max-width: 100% !important;
+  width: 100% !important;
+}
 @media only screen and (min-width: 1200px) {
   .container {
-    max-width: 95% !important;
     width: 1920px !important;
   }
 }
@@ -37,18 +40,35 @@ body {
   }
 }
 .signup__left {
+  background: url("../images/logoBack.png") no-repeat;
+  background-position: center;
+  background-size: cover;
   flex: 50%;
-  height: 938px;
-  background: #0C6C64;
+  height: 100%;
+  top: 0;
+  left: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #fff;
   padding: 50px 65px 0 65px;
+  position: fixed;
+  width: 46%;
+}
+.signup__left::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(12, 108, 100, 0.8);
+  z-index: -1;
 }
 @media only screen and (max-width: 767px) {
   .signup__left {
+    background: transparent;
     height: auto;
     padding: 50px;
   }
@@ -60,9 +80,16 @@ body {
   font-size: 20px;
   font-weight: 400;
 }
+@media only screen and (max-width: 991px) {
+  .signup__left {
+    position: initial;
+    width: 100%;
+  }
+}
 .signup__right {
   flex: 50%;
-  height: 938px;
+  width: 50%;
+  height: 100%;
   background: #F9FAFB;
   box-shadow: 0px 2px 10px rgba(12, 108, 100, 0.07);
   -webkit-box-shadow: 0px 2px 10px rgba(12, 108, 100, 0.07);
@@ -70,6 +97,14 @@ body {
   -ms-box-shadow: 0px 2px 10px rgba(12, 108, 100, 0.07);
   -o-box-shadow: 0px 2px 10px rgba(12, 108, 100, 0.07);
   text-align: center;
+  margin-left: 47%;
+  padding-bottom: 100px;
+}
+@media only screen and (max-width: 991px) {
+  .signup__right {
+    width: 100%;
+    margin-left: 0%;
+  }
 }
 @media only screen and (max-width: 767px) {
   .signup__right {
@@ -203,7 +238,8 @@ body {
 }
 @media only screen and (max-width: 991px) {
   .signup__right--content {
-    margin: 17px;
+    width: 100%;
+    margin: 0px;
     padding: 89px;
   }
 }

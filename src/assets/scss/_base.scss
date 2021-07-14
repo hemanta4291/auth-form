@@ -2,8 +2,11 @@
 @import 'variable';
 
 .container{
+    max-width: 100% !important;
+    width: 100% !important;
+    
     @media #{$large-device}{
-        max-width: 95% !important;
+        
         width: 1920px !important;
     }
 }
