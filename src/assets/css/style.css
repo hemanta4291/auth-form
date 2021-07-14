@@ -50,7 +50,7 @@ body {
   align-items: center;
   text-align: center;
   color: #fff;
-  padding: 50px 65px 0 65px;
+  padding: 50px 136px 0 136px;
   position: fixed;
   width: 46%;
 }
@@ -80,6 +80,12 @@ body {
   font-size: 20px;
   font-weight: 400;
   margin-top: 11px;
+  line-height: 28px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .signup__left {
+    padding: 50px 35px 0 34px;
+  }
 }
 @media only screen and (max-width: 991px) {
   .signup__left {
