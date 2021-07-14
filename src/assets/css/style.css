@@ -40,9 +40,7 @@ body {
   }
 }
 .signup__left {
-  background: url("../images/logoBack.png") no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: #0C6C64;
   flex: 50%;
   height: 100%;
   top: 0;
@@ -63,26 +61,35 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background: rgba(12, 108, 100, 0.8);
+  background: url("../images/logoBack.png") no-repeat;
+  background-position: center;
+  background-size: cover;
   z-index: -1;
 }
 @media only screen and (max-width: 767px) {
   .signup__left {
-    background: transparent;
     height: auto;
     padding: 50px;
   }
 }
 .signup__left--content h3 {
   font-weight: 700;
+  margin-top: 18px;
 }
 .signup__left--content p {
   font-size: 20px;
   font-weight: 400;
+  margin-top: 11px;
 }
 @media only screen and (max-width: 991px) {
   .signup__left {
     position: initial;
+    width: 100%;
+    padding-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .signup__left img {
     width: 100%;
   }
 }
@@ -113,16 +120,21 @@ body {
 }
 .signup__right--content {
   margin: 130px 320px 0 140px;
+  width: 496px;
+}
+.signup__right--content h3 {
+  margin-bottom: 10px;
 }
 .signup__right--content span {
   font-size: 18px;
   font-weight: 500;
   display: inline-block;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
 }
 .signup__right--content a {
   color: #0C6C64;
   font-weight: 500;
+  font-size: 18px;
 }
 .signup__right--content .form {
   margin-top: 15px;
@@ -134,6 +146,9 @@ body {
   -ms-box-shadow: 0px 2px 10px rgba(12, 108, 100, 0.07);
   -o-box-shadow: 0px 2px 10px rgba(12, 108, 100, 0.07);
   text-align: left;
+}
+.signup__right--content .form .row {
+  margin-bottom: 11px;
 }
 @media only screen and (max-width: 575px) {
   .signup__right--content .form {
@@ -153,9 +168,11 @@ body {
   -moz-border-radius: 6px;
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
-  margin-top: 10px;
+  margin-top: 4px;
+  height: 48px;
 }
 .signup__right--content .form input:focus {
+  border-bottom: 0;
   border-bottom-color: #D1D5DB !important;
   box-shadow: 0 0px 0 0 #26a69a !important;
 }
@@ -212,14 +229,17 @@ body {
   background: #0C6C64;
   color: #fff;
   height: 48px;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-  display: flex;
+  margin-top: 6px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 @media only screen and (min-width: 1600px) and (max-width: 1920px) {
   .signup__right--content {
@@ -233,7 +253,7 @@ body {
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .signup__right--content {
-    margin: 130px 117px 0 84px;
+    margin: 130px 91px 0 30px;
   }
 }
 @media only screen and (max-width: 991px) {
@@ -282,7 +302,7 @@ body {
   -o-border-radius: 4px;
 }
 .signup__right--content .phone__number select {
-  flex: 15%;
+  flex: 13%;
   height: 48px;
   border: 0;
   border-right: 0;
@@ -291,6 +311,10 @@ body {
 .signup__right--content .phone__number input {
   flex: 85%;
   border: 0;
+  padding-left: 5px;
+}
+.signup__right--content .phone__number input:focus {
+  border-bottom: 0 !important;
 }
 .signup__right--content .back__resend {
   text-align: right;
@@ -307,7 +331,7 @@ body {
   border-radius: 0;
   text-align: center;
   padding: 0 0 70px 0 !important;
-  width: 50%;
+  width: 700px;
 }
 .ReactModal__Overlay .ReactModal__Content img {
   margin: 30px 0;
@@ -338,11 +362,13 @@ body {
   border: 1px solid #0C6C64;
   cursor: pointer;
   padding: 0 20px;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 .ReactModal__Overlay .modal__close {
   position: absolute;

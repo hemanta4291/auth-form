@@ -12,9 +12,7 @@
     // $laptop-device
     // $xlmax-device
     &__left{
-        background: url('../images/logoBack.png') no-repeat;
-        background-position: center;
-        background-size: cover;
+        background: $darkGreen;
         flex: 50%;
         height: 100%;
         top: 0;
@@ -35,12 +33,13 @@
             height: 100%;
             top: 0;
             left: 0;
-            background: rgba(12,108,100,0.8);
+            background: url('../images/logoBack.png') no-repeat;
+            background-position: center;
+            background-size: cover;
             z-index: -1;
         }
 
         @media #{$large-mobile}{
-            background:transparent;
             height: auto;
             padding: 50px;
          }
@@ -48,15 +47,24 @@
         &--content{
             h3{
                 font-weight: 700;
+                margin-top: 18px;
             }
             p{
                 font-size: 20px;
                 font-weight: 400;
+                margin-top: 11px;
             }
         }
         @media #{$tablet-device}{
             position: initial;
             width: 100%;
+            padding-bottom: 40px;
+         }
+
+         @media #{$small-mobile}{
+            img{
+                width: 100%;
+            }
          }
         
     }
@@ -79,18 +87,24 @@
             }
         &--content{
             margin: 130px 320px 0 140px;
+            width: 496px;
+
+            h3{
+                margin-bottom: 10px;
+            }
 
             span{
                 font-size: 18px;
                 font-weight: 500;
                 display: inline-block;
-                margin-bottom: 10px;
+                margin-bottom: 18px;
 
                 
             }
             a{
                 color: $darkGreen;
                 font-weight: 500;
+                font-size: 18px;
             }
             .form{
                 margin-top: 15px;
@@ -98,6 +112,10 @@
                 padding: 48px;
                 @include box-shadow;
                 text-align: left;
+
+                .row{
+                    margin-bottom: 11px;
+                }
 
                 @media #{$small-mobile}{
                     padding: 15px;
@@ -113,9 +131,11 @@
                 input{
                     border: 1px solid $brcolor;
                     @include border-rd(6px);
-                    margin-top: 10px;
+                    margin-top: 4px;
+                    height: 48px;
 
                     &:focus{
+                        border-bottom: 0;
                         border-bottom-color: $brcolor !important;
                         box-shadow: 0 0px 0 0 #26a69a !important;
                     }
@@ -172,10 +192,13 @@
                 background: $darkGreen;
                 color: $white;
                 height: 48px;
-                @include border-rd(4px);
-                display: flex;
+                margin-top: 6px;
+                @include border-rd(6px);
+                display: inline-flex;
                 justify-content: center;
                 align-items: center;
+                font-weight: 600;
+                letter-spacing: 2px;
             }
 
 
@@ -188,7 +211,7 @@
                 margin: 130px 47px 0 58px;
             }
             @media #{$desktop-device}{
-                margin: 130px 117px 0 84px;
+                margin: 130px 91px 0 30px;
             }
             @media #{$tablet-device}{
                 width: 100%;
@@ -235,7 +258,7 @@
                
 
                 select{
-                    flex: 15%;
+                    flex: 13%;
                     height: 48px;
                     border: 0;
                     border-right: 0;
@@ -244,6 +267,11 @@
                 input{
                     flex: 85%;
                     border: 0;
+                    padding-left: 5px;
+
+                    &:focus{
+                        border-bottom: 0 !important;
+                    }
                 }
             }
 
@@ -270,7 +298,7 @@
         border-radius: 0;
         text-align: center;
         padding: 0 0 70px 0 !important;
-        width: 50%;
+        width: 700px;
 
         img{
             margin: 30px 0;
@@ -303,7 +331,9 @@
         border: 1px solid $darkGreen;
         cursor: pointer;
         padding: 0 20px;
-        @include border-rd(4px);
+        @include border-rd(6px);
+        font-weight: 600;
+        letter-spacing: 2px;
 
     }
     .modal__close{

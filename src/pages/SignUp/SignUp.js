@@ -32,8 +32,8 @@ import welcome from '../../assets/images/welcome.png'
                 </div>
                 <div className="signup__right">
                     <div className="signup__right--content">
-                        <h3>Sign in to your account</h3>
-                        <span>or Don't have an account?</span> <Link to="/signin">Sing In</Link>
+                        <h3>Create your Earn5 account </h3>
+                        <span>or Have an account?</span> <Link to="/signin">Sing In</Link>
                         <div className="row form">
                             <form className="col s12">
                             <div className="row">
@@ -63,7 +63,7 @@ import welcome from '../../assets/images/welcome.png'
                                 <div className="phone__number">
                                 <select class="browser-default">
                                     <option value="" disabled selected>Choose your option</option>
-                                    <option value="1">US</option>
+                                    <option value="1" selected>US</option>
                                     <option value="2">BD</option>
                                     <option value="3">In</option>
                                 </select>
@@ -81,7 +81,7 @@ import welcome from '../../assets/images/welcome.png'
                                 </div>
                             </div>
                             {/* <Link to="/" class="waves-effect waves-light btn-large submit__btn">Sign Up</Link> */}
-                            <button className="waves-effect waves-light btn-large submit__btn" onClick={openModal}>Open Modal</button>
+                            <button className="waves-effect waves-light btn-large submit__btn" onClick={openModal}>create account</button>
                             </form>
                         </div>
                     </div>
