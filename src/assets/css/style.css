@@ -176,6 +176,7 @@ body {
   -o-border-radius: 6px;
   margin-top: 4px;
   height: 48px;
+  padding-left: 10px;
 }
 .signup__right--content .form input:focus {
   border-bottom: 0;
