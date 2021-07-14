@@ -1,0 +1,19 @@
+$a :#fff;
+$darkGreen: #0C6C64;
+$white: #fff;
+$bgcolor:#F9FAFB;
+$brcolor:#D1D5DB;
+$rag700:#374151;
+$darkGray:#282828;
+$goldcolor:rgba(238, 182, 9, 1);
+
+
+
+$xlmax-device: 'only screen and (min-width: 1600px) and (max-width: 1920px)';
+$laptop-device : 'only screen and (min-width: 1200px) and (max-width: 1599px)';
+$large-device : 'only screen and (min-width: 1200px)';
+$desktop-device : 'only screen and (min-width: 992px) and (max-width: 1199px)';
+$tablet-device:'only screen and (max-width: 991px)';
+$large-mobile:'only screen and (max-width: 767px)';
+$small-mobile: 'only screen and (max-width: 575px)';
+$extra-small-mobile: 'only screen and (max-width: 479px)';

@@ -1,0 +1,293 @@
+
+.signup{
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media #{$tablet-device}{
+            display: block;
+        }
+    }
+    // $laptop-device
+    // $xlmax-device
+    &__left{
+        flex: 50%;
+        height: 938px;
+        background: $darkGreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: $white;
+        padding: 50px 65px 0 65px;
+
+        @media #{$large-mobile}{
+            height: auto;
+            padding: 50px;
+         }
+
+        &--content{
+            h3{
+                font-weight: 700;
+            }
+            p{
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+    }
+    &__right{
+        flex: 50%;
+        height: 938px;
+        background: $bgcolor;
+        @include box-shadow();
+        text-align: center;
+
+        @media #{$large-mobile}{
+            height: auto;
+            }
+        &--content{
+            margin: 130px 320px 0 140px;
+
+            span{
+                font-size: 18px;
+                font-weight: 500;
+                display: inline-block;
+                margin-bottom: 10px;
+
+                
+            }
+            a{
+                color: $darkGreen;
+                font-weight: 500;
+            }
+            .form{
+                margin-top: 15px;
+                background: $white;
+                padding: 48px;
+                @include box-shadow;
+                text-align: left;
+
+                @media #{$small-mobile}{
+                    padding: 15px;
+                }
+
+                .update__pass--p{
+                    margin: 20px 0 2px 0;
+                }
+                .message__img{
+                    margin-bottom: 18px;
+                }
+
+                input{
+                    border: 1px solid $brcolor;
+                    @include border-rd(6px);
+                    margin-top: 10px;
+
+                    &:focus{
+                        border-bottom-color: $brcolor !important;
+                        box-shadow: 0 0px 0 0 #26a69a !important;
+                    }
+
+                   
+                }
+                .input-field{
+                    margin: 0;
+                    
+                }
+                .input-field-extra{
+                    text-align: left;
+                }
+                .input-field.col label{
+                    position: initial;
+                    font-size: 14px;
+                    color: $rag700;
+                    font-weight: 500;
+                   
+                }
+            }
+
+            .row__dispaly{
+                display: flex;
+                justify-content: space-between;
+                text-align: right;
+
+                [type="checkbox"]+span:not(.lever):before, [type="checkbox"]:not(.filled-in)+span:not(.lever):after{
+                            border-color:$brcolor !important;
+                            @include border-rd(6px);
+                }
+                [type="checkbox"]:checked+span:not(.lever):before{
+                            border-color:$darkGreen !important;
+                            border-top:0;
+                            border-left: 0; 
+                            @include border-rd(0px);
+                }
+                [type="checkbox"]+span:not(.lever){
+                    padding-left: 25px;
+                }
+
+                @media #{$large-mobile}{
+                    display: initial;
+                    text-align: left;
+                }
+
+                .check__singup{
+                    font-size: 12px;
+                    line-height: 16px;
+                }
+            }
+            .submit__btn{
+                width: 100%;
+                background: $darkGreen;
+                color: $white;
+                height: 48px;
+                @include border-rd(4px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+
+
+            // responsive
+            @media #{$xlmax-device}{
+                margin: 130px 168px 0 140px;
+            }
+            @media #{$laptop-device}{
+                margin: 130px 47px 0 58px;
+            }
+            @media #{$desktop-device}{
+                margin: 130px 117px 0 84px;
+            }
+            @media #{$tablet-device}{
+                margin: 17px;
+                padding: 89px;
+            }
+
+            @media #{$large-mobile}{
+                margin: 0px;
+                padding: 45px;
+            }
+
+            @media #{$small-mobile}{
+                margin: 30px 0 0 0px;
+                padding: 0px;
+            }
+
+
+            // for reset page
+            .return{
+                font-size: 16px;
+                color: $darkGreen;
+                padding-top: 10px;
+                text-align: center;
+                a{
+                    text-decoration: underline;
+                }
+                &__span{
+                    padding-right: 3px;
+                    padding-top: 10px;
+                }
+            }
+
+            // for create account
+            .phone__number{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid $brcolor;
+                height: 48px;
+                margin: 10px 0;
+                @include border-rd(4px);
+
+               
+
+                select{
+                    flex: 15%;
+                    height: 48px;
+                    border: 0;
+                    border-right: 0;
+                    background: transparent;
+                }
+                input{
+                    flex: 85%;
+                    border: 0;
+                }
+            }
+
+            // update pass
+            .back__resend{
+                text-align: right;
+
+                a{
+                    margin: 3px 0 0 48px;
+                }
+            }
+            
+        }
+    }
+}
+
+
+// Modal Extra
+.ReactModal__Overlay{
+    background: rgba($darkGray,0.7)!important;
+    z-index: 99;
+
+    .ReactModal__Content{
+        border-radius: 0;
+        text-align: center;
+        padding: 0 0 70px 0 !important;
+        width: 50%;
+
+        img{
+            margin: 30px 0;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 500;
+            margin: 6px 0 0 0;
+        }
+    }
+
+    .modal__top{
+        background: $goldcolor;
+    }
+    .modal__content{
+        padding: 42px 40px 30px 40px;
+    }
+    .modal__btn__wr{
+        display: flex;
+        justify-content: center;
+    }
+    .modal__btn{
+        background: $darkGreen;
+        color: $white;
+        height: 48px;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid $darkGreen;
+        cursor: pointer;
+        padding: 0 20px;
+        @include border-rd(4px);
+
+    }
+    .modal__close{
+        position: absolute;
+        color: $white;
+        border: 1px solid $white;
+        background: $darkGreen;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        top: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
+        @include border-rd(50%);
+        cursor: pointer;
+    }
+}
