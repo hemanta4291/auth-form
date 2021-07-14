@@ -40,7 +40,7 @@ import message from "../../assets/images/message.png"
                                 </div>
                             </div>
                             <div className="back__resend">
-                            <Link to="/" class="">Back</Link><Link to="/" class="">Resend Code</Link>
+                            <Link to="/">Back</Link><Link to="/">Resend Code</Link>
                             </div>
                             </form>
                             

@@ -18,14 +18,14 @@ import FromLeft from "../../components/FormLeft/FormLeft"
                             <form className="col s12">
                             <div className="row">
                                 <div className="input-field col s12">
-                                <label for="first_name">First Name</label>
+                                <label>First Name</label>
                                 <input id="first_nam" type="text" className="validate"/>
                                 
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="input-field col s12">
-                                <label for="password">Password</label>
+                                <label>Password</label>
                                 <input id="password" type="password" className="validate"/>
                                 
                                 </div>
@@ -41,7 +41,7 @@ import FromLeft from "../../components/FormLeft/FormLeft"
                                 <Link to="forgot">Forgot Your Password?</Link>
                                 </div>
                             </div>
-                            <Link to="signin" class="waves-effect waves-light btn-large submit__btn">Sign in</Link>
+                            <Link to="signin" className="waves-effect waves-light btn-large submit__btn">Sign in</Link>
                             </form>
                         </div>
                     </div>

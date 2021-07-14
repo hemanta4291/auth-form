@@ -20,15 +20,15 @@ import FromLeft from "../../components/FormLeft/FormLeft"
                             <form className="col s12">
                             <div className="row">
                                 <div className="input-field col s12">
-                                <label for="password">Your Email</label>
+                                <label>Your Email</label>
                                 <input id="password" type="password" className="validate"/>
                                 
                                 </div>
                             </div>
-                            <Link to="signin" class="waves-effect waves-light btn-large submit__btn">Sign in</Link>
+                            <Link to="signin" className="waves-effect waves-light btn-large submit__btn">Sign in</Link>
                             </form>
                             <div className="return">
-                            <span className="return__span">Return to</span><Link to="signin" class="">Sign in</Link>
+                            <span className="return__span">Return to</span><Link to="signin">Sign in</Link>
                             </div>
                         </div>
                     </div>

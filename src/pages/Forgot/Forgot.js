@@ -18,19 +18,19 @@ import FromLeft from "../../components/FormLeft/FormLeft"
                             <form className="col s12">
                             <div className="row">
                                 <div className="input-field col s12">
-                                <label for="password">New Password</label>
+                                <label>New Password</label>
                                 <input id="password" type="password" className="validate"/>
                                 
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="input-field col s12">
-                                <label for="password">Confirm Password</label>
+                                <label>Confirm Password</label>
                                 <input id="password" type="password" className="validate"/>
                                 
                                 </div>
                             </div>
-                            <Link to="/" class="waves-effect waves-light btn-large submit__btn">Update Password</Link>
+                            <Link to="/" className="waves-effect waves-light btn-large submit__btn">Update Password</Link>
                             </form>
                             
                         </div>

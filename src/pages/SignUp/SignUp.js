@@ -38,32 +38,32 @@ import welcome from '../../assets/images/welcome.png'
                             <form className="col s12">
                             <div className="row">
                                 <div className="input-field col s12">
-                                <label for="first_name">Email Address</label>
+                                <label >Email Address</label>
                                 <input id="first_nam" type="email" className="validate"/>
                                 
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="input-field col s12">
-                                <label for="first_name">Full Name</label>
+                                <label >Full Name</label>
                                 <input id="first_nam" type="text" className="validate"/>
                                 
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="input-field col s12">
-                                <label for="password">Password</label>
+                                <label >Password</label>
                                 <input id="password" type="password" className="validate"/>
                                 
                                 </div>
                             </div>
                             <div className="row">
                                 <div className="input-field col s12">
-                                <label for="password">Phone Number</label>
+                                <label >Phone Number</label>
                                 <div className="phone__number">
-                                <select class="browser-default">
-                                    <option value="" disabled selected>Choose your option</option>
-                                    <option value="1" selected>US</option>
+                                <select className="browser-default">
+                                    <option value="" disabled>Choose your option</option>
+                                    <option value="selected" >US</option>
                                     <option value="2">BD</option>
                                     <option value="3">In</option>
                                 </select>
