@@ -215,7 +215,7 @@ body {
   justify-content: space-between;
   text-align: right;
 }
-.signup__right--content .row__dispaly [type=checkbox] + span:not(.lever):before, .signup__right--content .row__dispaly [type=checkbox]:not(.filled-in) + span:not(.lever):after {
+.signup__right--content .row__dispaly [type=checkbox].filled-in:not(:checked) + span:not(.lever):after {
   border-color: #D1D5DB !important;
   border-radius: 6px;
   -webkit-border-radius: 6px;
@@ -223,18 +223,12 @@ body {
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
 }
-.signup__right--content .row__dispaly [type=checkbox]:checked + span:not(.lever):before {
-  border-color: #0C6C64 !important;
-  border-top: 0;
-  border-left: 0;
-  border-radius: 0px;
-  -webkit-border-radius: 0px;
-  -moz-border-radius: 0px;
-  -ms-border-radius: 0px;
-  -o-border-radius: 0px;
+.signup__right--content .row__dispaly [type=checkbox].filled-in:checked + span:not(.lever):after {
+  border: 2px solid #4F46E5;
+  background-color: #4F46E5;
 }
 .signup__right--content .row__dispaly [type=checkbox] + span:not(.lever) {
-  padding-left: 25px;
+  padding-left: 30px;
 }
 .signup__right--content .row__dispaly .forgot {
   font-size: 14px;
@@ -389,6 +383,7 @@ body {
   background: #0C6C64;
   color: #fff;
   height: 48px;
+  width: 193px;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
@@ -406,14 +401,13 @@ body {
 }
 .ReactModal__Overlay .modal__close {
   position: absolute;
-  color: #fff;
   border: 1px solid #fff;
-  background: #0C6C64;
-  width: 50px;
-  height: 50px;
+  background: #fff;
+  width: 32px;
+  height: 32px;
   display: flex;
-  top: 0;
-  left: 0;
+  top: 8px;
+  right: 8px;
   justify-content: center;
   align-items: center;
   border-radius: 50%;

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import FromLeft from "../../components/FormLeft/FormLeft"
 import Modal from 'react-modal';
 import welcome from '../../assets/images/welcome.png'
+import close from '../../assets/images/close.png'
  const SignUp= ()=> {
     const [modalIsOpen, setIsOpen] = useState(false);
 
@@ -75,7 +76,7 @@ import welcome from '../../assets/images/welcome.png'
                             <div className="row row__dispaly">
                                 <div className="input-field input-field-extra col s12 m12">
                                     <label>
-                                        <input type="checkbox" />
+                                    <input type="checkbox" className="filled-in" />
                                         <span className="check__singup">Get emails from Earn5 about product updates, industry news, and events. If you change your mind, you can unsubscribe at any time. Privacy Policy.</span>
                                     </label>
                                 </div>
@@ -106,7 +107,7 @@ import welcome from '../../assets/images/welcome.png'
             <div className="modal__btn__wr">
             <button className="modal__btn">Start Exploring</button>
             </div>
-            <button className="modal__close" onClick={closeModal}>close</button>
+            <button className="modal__close" onClick={closeModal}><img src={close} alt="" /></button>
       </Modal>
         </div>
     )

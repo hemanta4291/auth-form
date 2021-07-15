@@ -180,19 +180,19 @@
                 display: flex;
                 justify-content: space-between;
                 text-align: right;
-
-                [type="checkbox"]+span:not(.lever):before, [type="checkbox"]:not(.filled-in)+span:not(.lever):after{
-                            border-color:$brcolor !important;
-                            @include border-rd(6px);
+                
+                [type="checkbox"].filled-in:not(:checked)+span:not(.lever):after {
+                    // border: 2px solid #5a5a5a;
+                    border-color:$brcolor !important;
+                    @include border-rd(6px);
                 }
-                [type="checkbox"]:checked+span:not(.lever):before{
-                            border-color:$darkGreen !important;
-                            border-top:0;
-                            border-left: 0; 
-                            @include border-rd(0px);
+
+                [type="checkbox"].filled-in:checked+span:not(.lever):after{
+                    border: 2px solid #4F46E5;;
+                    background-color: #4F46E5;;
                 }
                 [type="checkbox"]+span:not(.lever){
-                    padding-left: 25px;
+                    padding-left: 30px;
                 }
                 .forgot{
                     font-size: 14px;
@@ -355,6 +355,7 @@
         background: $darkGreen;
         color: $white;
         height: 48px;
+        width: 193px;
         text-transform: uppercase;
         display: flex;
         justify-content: center;
@@ -369,14 +370,13 @@
     }
     .modal__close{
         position: absolute;
-        color: $white;
         border: 1px solid $white;
-        background: $darkGreen;
-        width: 50px;
-        height: 50px;
+        background: $white;
+        width: 32px;
+        height: 32px;
         display: flex;
-        top: 0;
-        left: 0;
+        top: 8px;
+        right: 8px;
         justify-content: center;
         align-items: center;
         @include border-rd(50%);

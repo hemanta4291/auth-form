@@ -32,8 +32,9 @@ import FromLeft from "../../components/FormLeft/FormLeft"
                             </div>
                             <div className="row row__dispaly">
                                 <div className="input-field input-field-extra col s12 m6">
+                                    
                                     <label>
-                                        <input type="checkbox" />
+                                    <input type="checkbox" className="filled-in" />
                                         <span className="remember__me">Remember Me</span>
                                     </label>
                                 </div>
