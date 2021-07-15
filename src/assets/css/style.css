@@ -69,12 +69,6 @@ body {
   background-size: cover;
   z-index: -1;
 }
-@media only screen and (max-width: 767px) {
-  .signup__left {
-    height: auto;
-    padding: 50px;
-  }
-}
 .signup__left--content h3 {
   font-weight: 700;
   margin-top: 18px;
@@ -84,6 +78,12 @@ body {
   font-weight: 400;
   margin-top: 11px;
   line-height: 28px;
+}
+@media only screen and (max-width: 767px) {
+  .signup__left {
+    height: auto;
+    padding: 50px;
+  }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
   .signup__left {
@@ -110,17 +110,6 @@ body {
   text-align: center;
   margin-left: 47%;
   padding-bottom: 100px;
-}
-@media only screen and (max-width: 991px) {
-  .signup__right {
-    width: 100%;
-    margin-left: 0%;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .signup__right {
-    height: auto;
-  }
 }
 .signup__right--content {
   margin: 130px 320px 0 140px;
@@ -166,11 +155,6 @@ body {
 .signup__right--content .form .row {
   margin-bottom: 11px;
 }
-@media only screen and (max-width: 575px) {
-  .signup__right--content .form {
-    padding: 15px;
-  }
-}
 .signup__right--content .form .update__pass--p {
   margin: 20px 0 2px 0;
 }
@@ -210,6 +194,11 @@ body {
   color: #374151;
   font-weight: 500;
 }
+@media only screen and (max-width: 575px) {
+  .signup__right--content .form {
+    padding: 15px;
+  }
+}
 .signup__right--content .row__dispaly {
   display: flex;
   justify-content: space-between;
@@ -235,15 +224,15 @@ body {
   font-weight: 500;
   color: #0C6C64;
 }
+.signup__right--content .row__dispaly .check__singup {
+  font-size: 12px;
+  line-height: 16px;
+}
 @media only screen and (max-width: 767px) {
   .signup__right--content .row__dispaly {
     display: initial;
     text-align: left;
   }
-}
-.signup__right--content .row__dispaly .check__singup {
-  font-size: 12px;
-  line-height: 16px;
 }
 .signup__right--content .submit__btn {
   width: 100%;
@@ -266,40 +255,6 @@ body {
 .signup__right--content .forgot__btn {
   font-size: 15px;
   font-weight: 500;
-}
-@media only screen and (min-width: 1600px) and (max-width: 1920px) {
-  .signup__right--content {
-    margin: 130px 168px 0 140px;
-  }
-}
-@media only screen and (min-width: 1200px) and (max-width: 1599px) {
-  .signup__right--content {
-    margin: 130px 47px 0 58px;
-  }
-}
-@media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .signup__right--content {
-    margin: 130px 91px 0 30px;
-  }
-}
-@media only screen and (max-width: 991px) {
-  .signup__right--content {
-    width: 100%;
-    margin: 0px;
-    padding: 89px;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .signup__right--content {
-    margin: 0px;
-    padding: 45px;
-  }
-}
-@media only screen and (max-width: 575px) {
-  .signup__right--content {
-    margin: 30px 0 0 0px;
-    padding: 0px;
-  }
 }
 .signup__right--content .reset__form {
   margin-top: 50px;
@@ -363,6 +318,51 @@ body {
 .signup__right--content .back__resend a {
   margin: 3px 0 0 48px;
   color: #1F2937;
+}
+@media only screen and (min-width: 1600px) and (max-width: 1920px) {
+  .signup__right--content {
+    margin: 130px 168px 0 140px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+  .signup__right--content {
+    margin: 130px 47px 0 58px;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .signup__right--content {
+    margin: 130px 91px 0 30px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .signup__right--content {
+    width: 100%;
+    margin: 0px;
+    padding: 89px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .signup__right--content {
+    margin: 0px;
+    padding: 45px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .signup__right--content {
+    margin: 30px 0 0 0px;
+    padding: 0px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .signup__right {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .signup__right {
+    height: auto;
+  }
 }
 
 .ReactModal__Overlay {

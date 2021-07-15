@@ -1,8 +1,7 @@
 import React,{useState} from 'react'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from "react-router-dom";
-import FromLeft from "../../components/FormLeft/FormLeft"
-import SignUpC from "../../components/SignUp/SignUp"
+import FromLeft from "../FormLeft/FormLeft"
 import Modal from 'react-modal';
 import welcome from '../../assets/images/welcome.png'
 import close from '../../assets/images/close.png'
@@ -27,28 +26,11 @@ import close from '../../assets/images/close.png'
         setIsOpen(false);
       }
     return (
-        <div className="signup">
-            <div className="container">
-                <div className="signup__left">
-                    <FromLeft/>
-                </div>
-                <div className="signup__right">
-                    <div className="signup__right--content">
-                        <h3>Create your Earn5 account </h3>
-                        <span className="have__account">or Have an account?</span> <Link className="sing__up" to="/signin">Sing In</Link>
-                        <SignUpC  openModal={openModal}/>
-                    </div>
-                </div>
-            </div>
-
-
-
-            <Modal
-                isOpen={modalIsOpen}
-                onRequestClose={closeModal}
-                style={customStyles}
-                contentLabel="Example Modal"
-            >
+        <Modal
+            isOpen={modalIsOpen}
+            onRequestClose={closeModal}
+            style={customStyles}
+            contentLabel="Example Modal">
             <div className="modal__top">
                 <img src={welcome} alt="" />
             </div>
@@ -60,8 +42,7 @@ import close from '../../assets/images/close.png'
             <button className="modal__btn">Start Exploring</button>
             </div>
             <button className="modal__close" onClick={closeModal}><img src={close} alt="" /></button>
-      </Modal>
-        </div>
+        </Modal>
     )
 }
 export default SignUp

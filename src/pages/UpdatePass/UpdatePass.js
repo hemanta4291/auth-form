@@ -2,6 +2,7 @@ import React from 'react'
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { Link } from "react-router-dom";
 import FromLeft from "../../components/FormLeft/FormLeft"
+import Update from "../../components/Update/Update"
 import message from "../../assets/images/message.png"
  const Updatepass= ()=> {
 
@@ -18,31 +19,7 @@ import message from "../../assets/images/message.png"
                             <h4>Update Your Password</h4>
                             <p className="update__pass--p"> Enter the Code We just send to</p>
                             <span className="update__pass--span" >litondev@gmail.com</span>
-                            <form className="col s12 reset__form">
-                            <div className="row">
-                                <div className="input-field col s4 m2">
-                                 <input id="password" type="text" className="validate"/>
-                                </div>
-                                <div className="input-field col s4 m2">
-                                 <input id="password" type="text" className="validate"/>
-                                </div>
-                                <div className="input-field col s4 m2">
-                                 <input id="password" type="text" className="validate"/>
-                                </div>
-                                <div className="input-field col s4 m2">
-                                 <input id="password" type="text" className="validate"/>
-                                </div>
-                                <div className="input-field col s4 m2">
-                                 <input id="password" type="text" className="validate"/>
-                                </div>
-                                <div className="input-field col s4 m2">
-                                 <input id="password" type="text" className="validate"/>
-                                </div>
-                            </div>
-                            <div className="back__resend">
-                            <Link to="/">Back</Link><Link to="/">Resend Code</Link>
-                            </div>
-                            </form>
+                            <Update Link={Link}/>
                             
                         </div>
                     </div>
