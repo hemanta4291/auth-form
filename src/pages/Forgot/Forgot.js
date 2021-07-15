@@ -30,7 +30,7 @@ import FromLeft from "../../components/FormLeft/FormLeft"
                                 
                                 </div>
                             </div>
-                            <Link to="/" className="waves-effect waves-light btn-large submit__btn">Update Password</Link>
+                            <Link to="/" className="waves-effect waves-light btn-large submit__btn forgot__btn">Update Password</Link>
                             </form>
                             
                         </div>
