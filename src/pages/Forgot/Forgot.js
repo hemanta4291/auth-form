@@ -15,7 +15,7 @@ import FromLeft from "../../components/FormLeft/FormLeft"
                         <div className="row form">
                             <h4>Update Your Password</h4>
                             <p> Enter the email address associated with your account and we'll send you a link to reset your password.</p>
-                            <form className="col s12">
+                            <form className="col s12 cmn__form">
                             <div className="row">
                                 <div className="input-field col s12">
                                 <label>New Password</label>
