@@ -18,6 +18,7 @@ h3 {
 h4 {
   line-height: 25px;
   margin: 0 0;
+  font-size: 24px;
 }
 @media only screen and (max-width: 767px) {
   h4 {
@@ -27,6 +28,7 @@ h4 {
 
 body {
   font-family: "Inter", sans-serif;
+  background: #F9FAFB;
 }
 
 .signup .container {
@@ -129,18 +131,24 @@ body {
   width: 496px;
 }
 .signup__right--content h3 {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
-.signup__right--content span {
+.signup__right--content span.have__account {
   font-size: 18px;
   font-weight: 500;
   display: inline-block;
   margin-bottom: 18px;
 }
-.signup__right--content a {
+.signup__right--content a.sing__up {
   color: #0C6C64;
   font-weight: 500;
   font-size: 18px;
+}
+.signup__right--content span.remember__me {
+  font-size: 14px;
+  font-weight: 400;
+  display: inline-block;
+  margin-bottom: 18px;
 }
 .signup__right--content .form {
   margin-top: 15px;
@@ -151,6 +159,11 @@ body {
   -moz-box-shadow: 0px 2px 10px rgba(12, 108, 100, 0.07);
   -ms-box-shadow: 0px 2px 10px rgba(12, 108, 100, 0.07);
   -o-box-shadow: 0px 2px 10px rgba(12, 108, 100, 0.07);
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
   text-align: left;
 }
 .signup__right--content .form .row {
@@ -221,6 +234,10 @@ body {
 .signup__right--content .row__dispaly [type=checkbox] + span:not(.lever) {
   padding-left: 25px;
 }
+.signup__right--content .row__dispaly .forgot {
+  font-size: 14px;
+  font-weight: 500;
+}
 @media only screen and (max-width: 767px) {
   .signup__right--content .row__dispaly {
     display: initial;
@@ -287,6 +304,7 @@ body {
   color: #0C6C64;
   padding-top: 10px;
   text-align: center;
+  font-weight: 500;
 }
 .signup__right--content .return a {
   text-decoration: underline;
@@ -294,6 +312,7 @@ body {
 .signup__right--content .return__span {
   padding-right: 3px;
   padding-top: 10px;
+  display: inline-block;
 }
 .signup__right--content .phone__number {
   display: flex;
@@ -325,6 +344,7 @@ body {
 }
 .signup__right--content .back__resend {
   text-align: right;
+  color: #1F2937;
 }
 .signup__right--content .back__resend a {
   margin: 3px 0 0 48px;
@@ -395,10 +415,6 @@ body {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   cursor: pointer;
-}
-
-body {
-  background: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */

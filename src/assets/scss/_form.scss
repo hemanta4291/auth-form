@@ -95,10 +95,10 @@
             width: 496px;
 
             h3{
-                margin-bottom: 10px;
+                margin-bottom: 15px;
             }
 
-            span{
+            span.have__account{
                 font-size: 18px;
                 font-weight: 500;
                 display: inline-block;
@@ -106,16 +106,23 @@
 
                 
             }
-            a{
+            a.sing__up{
                 color: $darkGreen;
                 font-weight: 500;
                 font-size: 18px;
+            }
+            span.remember__me{
+                font-size: 14px;
+                font-weight: 400;
+                display: inline-block;
+                margin-bottom: 18px;
             }
             .form{
                 margin-top: 15px;
                 background: $white;
                 padding: 48px;
                 @include box-shadow;
+                @include border-rd(16px);
                 text-align: left;
 
                 .row{
@@ -182,6 +189,10 @@
                 [type="checkbox"]+span:not(.lever){
                     padding-left: 25px;
                 }
+                .forgot{
+                    font-size: 14px;
+                    font-weight: 500;
+                }
 
                 @media #{$large-mobile}{
                     display: initial;
@@ -242,12 +253,14 @@
                 color: $darkGreen;
                 padding-top: 10px;
                 text-align: center;
+                font-weight: 500;
                 a{
                     text-decoration: underline;
                 }
                 &__span{
                     padding-right: 3px;
                     padding-top: 10px;
+                    display: inline-block;
                 }
             }
 
@@ -284,6 +297,7 @@
             // update pass
             .back__resend{
                 text-align: right;
+                color: $gra800;
 
                 a{
                     margin: 3px 0 0 48px;

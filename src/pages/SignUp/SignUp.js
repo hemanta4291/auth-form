@@ -33,7 +33,7 @@ import welcome from '../../assets/images/welcome.png'
                 <div className="signup__right">
                     <div className="signup__right--content">
                         <h3>Create your Earn5 account </h3>
-                        <span>or Have an account?</span> <Link to="/signin">Sing In</Link>
+                        <span className="have__account">or Have an account?</span> <Link className="sing__up" to="/signin">Sing In</Link>
                         <div className="row form">
                             <form className="col s12">
                             <div className="row">
