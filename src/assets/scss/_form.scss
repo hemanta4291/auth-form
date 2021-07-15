@@ -78,7 +78,6 @@
         width: 50%;
         height: 100%;
         background: $bgcolor;
-        @include box-shadow();
         text-align: center;
         margin-left: 47%;
         padding-bottom: 100px;
@@ -116,11 +115,12 @@
                 font-weight: 400;
                 display: inline-block;
                 margin-bottom: 18px;
+                color: $gra900;
             }
             .form{
                 margin-top: 15px;
                 background: $white;
-                padding: 48px;
+                padding: 48px 48px 48px 37px;
                 @include box-shadow;
                 @include border-rd(16px);
                 text-align: left;
@@ -135,6 +135,11 @@
 
                 .update__pass--p{
                     margin: 20px 0 2px 0;
+                }
+                .update__pass--span{
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: $gra900;
                 }
                 .message__img{
                     margin-bottom: 18px;
@@ -192,6 +197,7 @@
                 .forgot{
                     font-size: 14px;
                     font-weight: 500;
+                    color: $darkGreen;
                 }
 
                 @media #{$large-mobile}{
@@ -215,7 +221,8 @@
                 justify-content: center;
                 align-items: center;
                 font-weight: 600;
-                letter-spacing: 2px;
+                letter-spacing: 0.4px;
+                font-size: 16px;
             }
 
 
@@ -246,7 +253,9 @@
                 padding: 0px;
             }
 
-
+            .reset__form{
+                margin-top: 50px;
+            }
             // for reset page
             .return{
                 font-size: 16px;
@@ -295,12 +304,14 @@
             }
 
             // update pass
+            
             .back__resend{
                 text-align: right;
-                color: $gra800;
+                
 
                 a{
                     margin: 3px 0 0 48px;
+                    color: $gra800;
                 }
             }
             
@@ -353,7 +364,7 @@
         padding: 0 20px;
         @include border-rd(6px);
         font-weight: 600;
-        letter-spacing: 2px;
+        letter-spacing: 0.4px;
 
     }
     .modal__close{

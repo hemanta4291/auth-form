@@ -13,12 +13,12 @@ import message from "../../assets/images/message.png"
                 </div>
                 <div className="signup__right">
                     <div className="signup__right--content">
-                        <div className="row form">
+                        <div className="row form ">
                             <img className="message__img" src={message} alt="" />
                             <h4>Update Your Password</h4>
                             <p className="update__pass--p"> Enter the Code We just send to</p>
-                            <span>litondev@gmail.com</span>
-                            <form className="col s12">
+                            <span className="update__pass--span" >litondev@gmail.com</span>
+                            <form className="col s12 reset__form">
                             <div className="row">
                                 <div className="input-field col s4 m2">
                                  <input id="password" type="text" className="validate"/>

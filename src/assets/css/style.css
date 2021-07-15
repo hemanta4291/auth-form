@@ -19,6 +19,7 @@ h4 {
   line-height: 25px;
   margin: 0 0;
   font-size: 24px;
+  color: #111827;
 }
 @media only screen and (max-width: 767px) {
   h4 {
@@ -106,11 +107,6 @@ body {
   width: 50%;
   height: 100%;
   background: #F9FAFB;
-  box-shadow: 0px 2px 10px rgba(12, 108, 100, 0.07);
-  -webkit-box-shadow: 0px 2px 10px rgba(12, 108, 100, 0.07);
-  -moz-box-shadow: 0px 2px 10px rgba(12, 108, 100, 0.07);
-  -ms-box-shadow: 0px 2px 10px rgba(12, 108, 100, 0.07);
-  -o-box-shadow: 0px 2px 10px rgba(12, 108, 100, 0.07);
   text-align: center;
   margin-left: 47%;
   padding-bottom: 100px;
@@ -149,11 +145,12 @@ body {
   font-weight: 400;
   display: inline-block;
   margin-bottom: 18px;
+  color: #111827;
 }
 .signup__right--content .form {
   margin-top: 15px;
   background: #fff;
-  padding: 48px;
+  padding: 48px 48px 48px 37px;
   box-shadow: 0px 2px 10px rgba(12, 108, 100, 0.07);
   -webkit-box-shadow: 0px 2px 10px rgba(12, 108, 100, 0.07);
   -moz-box-shadow: 0px 2px 10px rgba(12, 108, 100, 0.07);
@@ -176,6 +173,11 @@ body {
 }
 .signup__right--content .form .update__pass--p {
   margin: 20px 0 2px 0;
+}
+.signup__right--content .form .update__pass--span {
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
 }
 .signup__right--content .form .message__img {
   margin-bottom: 18px;
@@ -237,6 +239,7 @@ body {
 .signup__right--content .row__dispaly .forgot {
   font-size: 14px;
   font-weight: 500;
+  color: #0C6C64;
 }
 @media only screen and (max-width: 767px) {
   .signup__right--content .row__dispaly {
@@ -263,7 +266,8 @@ body {
   justify-content: center;
   align-items: center;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 0.4px;
+  font-size: 16px;
 }
 @media only screen and (min-width: 1600px) and (max-width: 1920px) {
   .signup__right--content {
@@ -298,6 +302,9 @@ body {
     margin: 30px 0 0 0px;
     padding: 0px;
   }
+}
+.signup__right--content .reset__form {
+  margin-top: 50px;
 }
 .signup__right--content .return {
   font-size: 16px;
@@ -344,10 +351,10 @@ body {
 }
 .signup__right--content .back__resend {
   text-align: right;
-  color: #1F2937;
 }
 .signup__right--content .back__resend a {
   margin: 3px 0 0 48px;
+  color: #1F2937;
 }
 
 .ReactModal__Overlay {
@@ -395,7 +402,7 @@ body {
   -ms-border-radius: 6px;
   -o-border-radius: 6px;
   font-weight: 600;
-  letter-spacing: 2px;
+  letter-spacing: 0.4px;
 }
 .ReactModal__Overlay .modal__close {
   position: absolute;
