@@ -261,9 +261,15 @@
             .reset__form{
                 margin-top: 50px;
                 padding: 0;
+                .row{
+                    margin-right: 0;
+                }
             }
             .cmn__form{
                 padding: 0;
+                .row{
+                    margin-right: 0;
+                }
             }
             // for reset page
             .return{

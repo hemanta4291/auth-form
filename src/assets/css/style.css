@@ -305,8 +305,14 @@ body {
   margin-top: 50px;
   padding: 0;
 }
+.signup__right--content .reset__form .row {
+  margin-right: 0;
+}
 .signup__right--content .cmn__form {
   padding: 0;
+}
+.signup__right--content .cmn__form .row {
+  margin-right: 0;
 }
 .signup__right--content .return {
   font-size: 16px;
